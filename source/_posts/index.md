@@ -2,9 +2,9 @@ title: 如何在GitHub上创建自己的仓库
 date: 2017-04-30 16:45:00
 description: 高手勿进! 高手请拿个小凳子坐在旁边...</br>GitHub 是一个面向开源以及私有项目的托管平台，因为只支持Git作为唯一版本库格式进行托管，所以叫做GitHub。git我们后面会讲到，现在我们来看看如何在GitHub上新建项目吧!
 categories:
-- GitHub 新手
+- GitHub
 tags:
-- GitHub 标签
+- GitHub Tag
 toc: true 文章目录
 author: lidong
 comments:
