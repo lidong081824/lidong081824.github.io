@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点 | 李东的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="当你有需要做一个网站宣传首页或者做一个简单的主页，而内容比较长，你就需要用到scrollify 来美化你的主页,让主页精彩部分展示在你的掌控之中!">
+<meta name="keywords" content="jQuery Tag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点">
+<meta property="og:url" content="http://lidong0818.top/2017/11/02/171102/index.html">
+<meta property="og:site_name" content="李东的个人博客">
+<meta property="og:description" content="当你有需要做一个网站宣传首页或者做一个简单的主页，而内容比较长，你就需要用到scrollify 来美化你的主页,让主页精彩部分展示在你的掌控之中!">
+<meta property="og:image" content="http://lidong0818.top/img/20171102.png">
+<meta property="og:image" content="http://lidong0818.top/img/2017110201.png">
+<meta property="og:image" content="http://lidong0818.top/img/2017110202.png">
+<meta property="og:image" content="http://lidong0818.top/img/2017110203.png">
+<meta property="og:updated_time" content="2017-11-02T07:58:39.506Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点">
+<meta name="twitter:description" content="当你有需要做一个网站宣传首页或者做一个简单的主页，而内容比较长，你就需要用到scrollify 来美化你的主页,让主页精彩部分展示在你的掌控之中!">
+<meta name="twitter:image" content="http://lidong0818.top/img/20171102.png">
+  
+    <link rel="alternative" href="/atom.xml" title="李东的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/dong.jpg">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/lidong.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">lidong</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/about">写在前面</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=&#53;&#52;&#51;&#51;&#54;&#52;&#57;&#54;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/lidong081824" title="github">github</a>
+                            
+                                <a class="fl weibo" target="_blank" href="https://weibo.com/5822667743/profile?topnav=1&wvr=6&is_all=1" title="weibo">weibo</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/lidong0818/activities" title="zhihu">zhihu</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/AngularJs-Tag/" style="font-size: 10px;">AngularJs Tag</a> <a href="/tags/CSS-Tag/" style="font-size: 10px;">CSS Tag</a> <a href="/tags/Git-Tag/" style="font-size: 10px;">Git Tag</a> <a href="/tags/GitHub-Tag/" style="font-size: 10px;">GitHub Tag</a> <a href="/tags/JavaScript-Tag/" style="font-size: 20px;">JavaScript Tag</a> <a href="/tags/gulp-Tag/" style="font-size: 10px;">gulp Tag</a> <a href="/tags/jQuery-Tag/" style="font-size: 15px;">jQuery Tag</a> <a href="/tags/layout-Tag/" style="font-size: 10px;">layout Tag</a> <a href="/tags/webpack-Tag/" style="font-size: 10px;">webpack Tag</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://chenyunxuan.top/">陈洪鑫</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.5151jh.com/">肖从胜</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.donggw.com/">怪Uncle博客</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">热爱运动，喜欢足球，爱旅游。我是一个初级前端爱好者，对编程充满了热情。希望可以和你成为朋友...</div>
+                </section>
+                
+            </div>
+        </div>
+        <!-- <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p> -->
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">lidong</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/lidong.jpg" class="js-avatar">
+                
+            </a>
+
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">lidong</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/about">写在前面</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=&#53;&#52;&#51;&#51;&#54;&#52;&#57;&#54;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/lidong081824" title="github">github</a>
+                    
+                        <a class="weibo" target="_blank" href="https://weibo.com/5822667743/profile?topnav=1&wvr=6&is_all=1" title="weibo">weibo</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/lidong0818/activities" title="zhihu">zhihu</a>
+                    
+                </div>
+            </nav>
+            <!-- <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p> -->
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-171102" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/11/02/171102/" class="article-date">
+      <time datetime="2017-11-02T06:00:00.000Z" itemprop="datePublished">2017-11-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/jQuery/">jQuery</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery-Tag/">jQuery Tag</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>　　<strong> scrollify 用法 </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+<ul>
+<li><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文=""><br>scrollify 是jQuery下的一个全屏滚动插件,如果想在西东设备上有更好的支持可使用fullPage,一般情况下用scrollify的优势在于自定义锚点、过渡效果设置、偏移、滚动条、回调函数。</the></li>
+</ul>
+<h3 id="直接上代码"><a href="#直接上代码" class="headerlink" title="直接上代码"></a>直接上代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;zh-CN&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">    &lt;title&gt;jQuery-scrollify鼠标全屏翻动&lt;/title&gt;</div><div class="line">    &lt;style&gt;</div><div class="line">        *&#123;</div><div class="line">           margin: 0;padding: 0;</div><div class="line">        &#125;</div><div class="line">        /* .left &#123; float: left; width: 1000px; height: 500px; overflow: hidden;&#125; */</div><div class="line">    &lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">    &lt;div class=&quot;left&quot;&gt;</div><div class="line">        &lt;section class=&quot;panel&quot;&gt;</div><div class="line">            &lt;div&gt;这是第一个模块&lt;/div&gt;</div><div class="line">            &lt;img src=&quot;img/1.jpg&quot; alt=&quot;图片&quot;&gt;</div><div class="line">        &lt;/section&gt;</div><div class="line">        &lt;section class=&quot;panel&quot;&gt;</div><div class="line">                &lt;div&gt;这是第二个模块&lt;/div&gt;</div><div class="line">                &lt;img src=&quot;img/2.jpg&quot; alt=&quot;图片&quot;&gt;</div><div class="line">        &lt;/section&gt;</div><div class="line">        &lt;section class=&quot;panel&quot;&gt;</div><div class="line">                &lt;div&gt;这是第三个模块&lt;/div&gt;</div><div class="line">                &lt;img src=&quot;img/3.jpg&quot; alt=&quot;图片&quot;&gt;</div><div class="line">            &lt;/section&gt;</div><div class="line">            &lt;section class=&quot;panel&quot;&gt;</div><div class="line">                    &lt;div&gt;这是四个模块&lt;/div&gt;</div><div class="line">                    &lt;img src=&quot;img/4.jpg&quot; alt=&quot;图片&quot;&gt;</div><div class="line">            &lt;/section&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;script src=&quot;js/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;js/jquery.easing.1.3.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;js/jquery.scrollify.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script&gt;</div><div class="line">$(function() &#123;</div><div class="line">    debugger;</div><div class="line">	$(&apos;.panel&apos;).css(&#123;&apos;height&apos;: $(window).height()&#125;);</div><div class="line">	$.scrollify(&#123;</div><div class="line">        //绑定需要滚动的对象</div><div class="line">        section: &apos;section&apos;,</div><div class="line">        //过度效果</div><div class="line">        // easing: &apos;easeOutExpo&apos;, </div><div class="line">        // //滚动偏移，上下模块是否露出部分</div><div class="line">        // offset:0,</div><div class="line">        // //滚动时间/毫秒</div><div class="line">        // scrollSpeed: 1500,</div><div class="line">        // // target: &apos;.left&apos;,</div><div class="line">        // before:function() &#123;</div><div class="line">        //     console.log(&quot;我是在动画前触发&quot;);</div><div class="line">        // &#125;,</div><div class="line">        // after:function() &#123;</div><div class="line">        //     console.log(&quot;我是在动画后触发&quot;);</div><div class="line">        // &#125;,</div><div class="line">	&#125;);</div><div class="line">&#125;);</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h3 id="目录结构图"><a href="#目录结构图" class="headerlink" title="目录结构图"></a>目录结构图</h3><p><img src="/img/20171102.png" alt="效果图"></p>
+<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="/img/2017110201.png" alt="效果图"><br><img src="/img/2017110202.png" alt="效果图"><br><img src="/img/2017110203.png" alt="效果图"></p>
+<p>这样每滑动一次鼠标，就会自动跳到下一张设定的图片。</p>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/11/02/171102/">scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
+        <p><span>发布时间:</span>2017年11月02日 - 14时00分</p>
+        <p><span>最后更新:</span>2017年11月02日 - 15时58分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/11/02/171102/" title="scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点">http://lidong0818.top/2017/11/02/171102/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://lidong0818.top/2017/11/02/171102/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/06/26/170626/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          webpack 前端资源模块化打包加载神器
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/02/28/180228/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浅谈Flex布局</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#直接上代码"><span class="toc-number">1.</span> <span class="toc-text">直接上代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目录结构图"><span class="toc-number">2.</span> <span class="toc-text">目录结构图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#效果图"><span class="toc-number">3.</span> <span class="toc-text">效果图</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <section class="youyan" id="comments" style="color:antiquewhite">
+  <div style="color:antiquewhite" id="uyan_frame"></div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2132314"></script>
+  
+</section>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/06/26/170626/" title="上一篇: webpack 前端资源模块化打包加载神器">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2018/02/28/180228/" title="下一篇: 浅谈Flex布局">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/28/180228/">浅谈Flex布局</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/171102/">scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/26/170626/">webpack 前端资源模块化打包加载神器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/19/170619/">gulp 基于流的自动化构建工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/170608/">jQuery 命名冲突的三种解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170527/">异步加载 JS 的3种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170526/">JavaScript this 关键字的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/170524/">JavaScript 经典笔试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/23/170523/">jQuery 图片延迟加载方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/18/170518/">清除浮动的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2018 lidong
+            </div><br><br>
+            <div class="footer-left"><a href="http://www.miitbeian.gov.cn" target="_blank">鄂ICP备17025166号-1</a></div>
+            <!--<div class="footer-right">-->
+                <!--<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman-->
+            <!--</div>-->
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >到访人数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+            
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

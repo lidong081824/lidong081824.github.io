@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>JavaScript 经典笔试题 | 李东的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="JavaScript最经典的面试题,需要面试或者想要深入掌握的同学可以看看 !">
+<meta name="keywords" content="JavaScript Tag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript 经典笔试题">
+<meta property="og:url" content="http://lidong0818.top/2017/05/24/170524/index.html">
+<meta property="og:site_name" content="李东的个人博客">
+<meta property="og:description" content="JavaScript最经典的面试题,需要面试或者想要深入掌握的同学可以看看 !">
+<meta property="og:updated_time" content="2017-11-02T07:23:18.594Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript 经典笔试题">
+<meta name="twitter:description" content="JavaScript最经典的面试题,需要面试或者想要深入掌握的同学可以看看 !">
+  
+    <link rel="alternative" href="/atom.xml" title="李东的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/dong.jpg">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/lidong.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">lidong</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/about">写在前面</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=&#53;&#52;&#51;&#51;&#54;&#52;&#57;&#54;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/lidong081824" title="github">github</a>
+                            
+                                <a class="fl weibo" target="_blank" href="https://weibo.com/5822667743/profile?topnav=1&wvr=6&is_all=1" title="weibo">weibo</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/lidong0818/activities" title="zhihu">zhihu</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/AngularJs-Tag/" style="font-size: 10px;">AngularJs Tag</a> <a href="/tags/CSS-Tag/" style="font-size: 10px;">CSS Tag</a> <a href="/tags/Git-Tag/" style="font-size: 10px;">Git Tag</a> <a href="/tags/GitHub-Tag/" style="font-size: 10px;">GitHub Tag</a> <a href="/tags/JavaScript-Tag/" style="font-size: 20px;">JavaScript Tag</a> <a href="/tags/gulp-Tag/" style="font-size: 10px;">gulp Tag</a> <a href="/tags/jQuery-Tag/" style="font-size: 15px;">jQuery Tag</a> <a href="/tags/layout-Tag/" style="font-size: 10px;">layout Tag</a> <a href="/tags/webpack-Tag/" style="font-size: 10px;">webpack Tag</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://chenyunxuan.top/">陈洪鑫</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.5151jh.com/">肖从胜</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.donggw.com/">怪Uncle博客</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">热爱运动，喜欢足球，爱旅游。我是一个初级前端爱好者，对编程充满了热情。希望可以和你成为朋友...</div>
+                </section>
+                
+            </div>
+        </div>
+        <!-- <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p> -->
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">lidong</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/lidong.jpg" class="js-avatar">
+                
+            </a>
+
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">lidong</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/about">写在前面</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=&#53;&#52;&#51;&#51;&#54;&#52;&#57;&#54;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/lidong081824" title="github">github</a>
+                    
+                        <a class="weibo" target="_blank" href="https://weibo.com/5822667743/profile?topnav=1&wvr=6&is_all=1" title="weibo">weibo</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/lidong0818/activities" title="zhihu">zhihu</a>
+                    
+                </div>
+            </nav>
+            <!-- <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p> -->
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-170524" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/05/24/170524/" class="article-date">
+      <time datetime="2017-05-24T06:30:00.000Z" itemprop="datePublished">2017-05-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript 经典笔试题
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript-Tag/">JavaScript Tag</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>　　<strong> JavaScript 经典笔试题 </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+<ul>
+<li><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+</the></li>
+</ul>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//请问控制台打印什么值?</div><div class="line">(function()&#123;</div><div class="line">	var a = b = 1;</div><div class="line">&#125;)();</div><div class="line"></div><div class="line">console.log(a); //undefined</div><div class="line">console.log(b); //1</div></pre></td></tr></table></figure>
+<p>ps:在非严格模式下, a是由var 申明的局部变量, b是声明的全局变量。<br><br></p>
+<h3 id="拓展原生方法"><a href="#拓展原生方法" class="headerlink" title="拓展原生方法"></a>拓展原生方法</h3><p>给字符串对象拓展一个功能。当传入一个整数N时,他会返回重复N次字符串的结果。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">String.prototype.natives = String.prototype.natives || function(item)&#123;</div><div class="line">	var str = &quot;&quot;;</div><div class="line">	for(var i = 0;i&lt;item;i++)&#123;</div><div class="line">		str+=this;</div><div class="line">	&#125;</div><div class="line">	return str;</div><div class="line">&#125;</div><div class="line">console.log(&quot;lidong&quot;.natives(5)) //lidonglidonglidonglidonglidong</div></pre></td></tr></table></figure></p>
+<p>ps<br>1,这考察了JavaScript有关继承和prototype关键字的理解。这是扩展原生方法的做法,用于处理JavaScript函数兼容时的最好解决办法。<br>2，这里还有一个重要的考点是,你应该确保你新定义的方法不能覆盖原有的方法，进过下面方法测试。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">String.prototype.natives = String.prototype.natives || function(item)&#123;alert(1);&#125;</div></pre></td></tr></table></figure></p>
+<p><br></p>
+<h3 id="申明提升"><a href="#申明提升" class="headerlink" title="申明提升"></a>申明提升</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">(function()&#123;</div><div class="line">	console.log(a);    //undefined</div><div class="line">	console.log(foo());//2</div><div class="line"></div><div class="line">	var a= 1;</div><div class="line"></div><div class="line">	function foo()&#123;</div><div class="line">		return 2;</div><div class="line">	&#125;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+<p>ps:变量和函数的申明都被提前了(相当于在函数顶部被申明),但是!变量的申明提前不赋值。函数的申明提前直接将整个函数提前。(便于理解看下面的等同写法)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">(function()&#123;</div><div class="line">	var a;</div><div class="line"></div><div class="line">	function foo()&#123;</div><div class="line">		return 2;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	console.log(a);</div><div class="line">	console.log(foo());</div><div class="line"></div><div class="line">	a= 1;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure></p>
+<p><br></p>
+<h3 id="this在JavaScript中如何工作"><a href="#this在JavaScript中如何工作" class="headerlink" title="this在JavaScript中如何工作"></a>this在JavaScript中如何工作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">var content = &apos;李东好帅！&apos;;</div><div class="line"></div><div class="line">var obj = &#123;</div><div class="line">	content :&apos;是真的好帅！&apos;,</div><div class="line"> 	zobj :&#123;</div><div class="line">		content : &apos;好帅！&apos;,</div><div class="line">		getContent : function()&#123;</div><div class="line">			return this.content;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">var text = obj.zobj.getContent;</div><div class="line">console.log(text()); //李东好帅！</div><div class="line">console.log(obj.zobj.getContent()); //好帅！</div></pre></td></tr></table></figure>
+<p>ps<br>1，在一个函数中,this的行为,取决于javascript函数的调用方式和定义方式,而不仅仅是看它是如何被定义的。<br>2，当getContent()方法被分配到全局变量test时,上下文指全局对象,即this被赋予全局作用域权限,所以值为’李东好帅！’。<br>3，当getContent()方法被调用作为obj.zobj对象的函数时,上下文指obj.zobj对象,即this被赋予obj.zobj对象的权限,所以值为’好帅！’。</p>
+<p><br></p>
+<h3 id="split和join的区别"><a href="#split和join的区别" class="headerlink" title="split和join的区别"></a>split和join的区别</h3><p>split()方法用于把字符串按字符串内存在的标识分割为字符串数组。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//定义的字符串</div><div class="line">var arr = &quot;今天，天气很不错，我和我女朋友去逛公园了...&quot;;</div><div class="line"></div><div class="line">//参数1 字符串中存在的标识(例如逗号，)</div><div class="line">//参数2 返回数组的长度，默认全长度</div><div class="line">var arr1 = arr.split(&quot;，&quot;); 	//[&quot;今天，天气很不错，我和我女朋友去逛公园了...&quot;]</div><div class="line">var arr1 = arr.split(&quot;，&quot;,1);	//[&quot;今天&quot;]</div><div class="line">var arr1 = arr.split(&quot;，&quot;,2);	//[&quot;今天，天气很不错&quot;]</div><div class="line">var arr1 = arr.split(&quot;，&quot;,3);	//[&quot;今天，天气很不错，我和我女朋友去逛公园了...&quot;]</div></pre></td></tr></table></figure></p>
+<p>join()方法把数组中元素按指定符号加入到字符串。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//定义的数组</div><div class="line">var arr2 = [&quot;今天&quot;,&quot;天气很不错&quot;,&quot;我和我女朋友去逛公园了...&quot;];</div><div class="line"></div><div class="line">//默认是一逗号分隔</div><div class="line">var arr3 = arr2.join();		//今天，天气很不错，我和我女朋友去逛公园了...</div><div class="line">var arr3 = arr2.join(&quot;-&quot;);	//今天-天气很不错-我和我女朋友去逛公园了...</div><div class="line">var arr3 = arr2.join(&quot;#&quot;);	//今天#天气很不错#我和我女朋友去逛公园了...</div></pre></td></tr></table></figure></p>
+<p>ps<br>1,split()相当于字符串转数组<br>2,join()常用于数组转字符串,数组转字符串拓展用法:toString()</p>
+<p><br></p>
+<h3 id="cookie和sessionStorage以及localStorage的区别"><a href="#cookie和sessionStorage以及localStorage的区别" class="headerlink" title="cookie和sessionStorage以及localStorage的区别"></a>cookie和sessionStorage以及localStorage的区别</h3><p>相同点:都保存于浏览器且都是同源的。<br>异同点:<br>1,cookie浏览器服务器行为。始终在同源的http请求中被携带,哪怕请求不需要,即它是在浏览器和服务器之间进行传递的,大小不能超过4K。在cookie失效前长期有效。<br>2,sessionStorage浏览器行为。数据存贮在同源浏览器,大小超过5M甚至更大。但是当前浏览器关闭数据失效。<br>3,localStorage浏览器行为。数据存贮在同源浏览器,大小超过5M甚至更大。数据永久保存除非手动删除。<br><br></p>
+<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//需要去除重复的数组</div><div class="line">let str = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;];</div><div class="line">//新定义接受新数组</div><div class="line">let newStr = [];</div><div class="line">//循环遍历数组中的元素</div><div class="line">for(let i = 0 ; i&lt;str.length ; i ++)&#123;</div><div class="line">	//新数组中不存在当前元素就添加     否则不做处理</div><div class="line">	if(newStr.indexOf(str[i])==-1)&#123;</div><div class="line">		newStr.push(str[i]);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">console.log(newStr);	//[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</div></pre></td></tr></table></figure>
+<p><br></p>
+<h3 id="统计出现最多的字符及次数"><a href="#统计出现最多的字符及次数" class="headerlink" title="统计出现最多的字符及次数"></a>统计出现最多的字符及次数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">//需要统计的字符串</div><div class="line">let str = &quot;abca&quot;;</div><div class="line">//新定义的json</div><div class="line">let newStr = &#123;&#125;;</div><div class="line">//循环遍历元素</div><div class="line">for(let i = 0;i&lt;str.length; i++)&#123;</div><div class="line">	//如果新对象中不包含字符串中的元素</div><div class="line">	if(!newStr[str.charAt(i)])&#123;</div><div class="line">		//不包含就设置json属性为i，并且值为1;</div><div class="line">		newStr[str.charAt(i)]=1;</div><div class="line">	&#125;else&#123;</div><div class="line">		//包含了就改变当前json属性值为+1;</div><div class="line">		newStr[str.charAt(i)]++;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//得到新的json格式</div><div class="line">console.log(newStr);	//&#123;a: 2, b: 1, c: 1&#125;</div><div class="line"></div><div class="line">//定义接受出现最多的字符字符串</div><div class="line">let sIndex =&apos;&apos;;</div><div class="line">//定义接受最多字符串出现的次数</div><div class="line">let sMax = 0;</div><div class="line">//循坏遍历属性值</div><div class="line">for(let i in newStr)&#123;</div><div class="line">	//如果json格式中第一个属性的值大于0</div><div class="line">	if(newStr[i]&gt;sMax)&#123;</div><div class="line">		//那么 出现最多的字符就是 i</div><div class="line">		sIndex = i;</div><div class="line">		//那么 出现最多的字符次数的就是 newStr[i]</div><div class="line">		sMax = newStr[i];</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">//输出值</div><div class="line">console.log(&quot;出现最多的字符是:&quot;+sIndex+&quot; 出现次数为:&quot;+sMax+&quot;次&quot;);	// a:2次</div></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/05/24/170524/">JavaScript 经典笔试题</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
+        <p><span>发布时间:</span>2017年05月24日 - 14时30分</p>
+        <p><span>最后更新:</span>2017年11月02日 - 15时23分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/24/170524/" title="JavaScript 经典笔试题">http://lidong0818.top/2017/05/24/170524/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://lidong0818.top/2017/05/24/170524/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/05/23/170523/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          jQuery 图片延迟加载方法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/05/26/170526/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript this 关键字的用法</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-number">1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拓展原生方法"><span class="toc-number">2.</span> <span class="toc-text">拓展原生方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#申明提升"><span class="toc-number">3.</span> <span class="toc-text">申明提升</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this在JavaScript中如何工作"><span class="toc-number">4.</span> <span class="toc-text">this在JavaScript中如何工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#split和join的区别"><span class="toc-number">5.</span> <span class="toc-text">split和join的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cookie和sessionStorage以及localStorage的区别"><span class="toc-number">6.</span> <span class="toc-text">cookie和sessionStorage以及localStorage的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数组去重"><span class="toc-number">7.</span> <span class="toc-text">数组去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#统计出现最多的字符及次数"><span class="toc-number">8.</span> <span class="toc-text">统计出现最多的字符及次数</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <section class="youyan" id="comments" style="color:antiquewhite">
+  <div style="color:antiquewhite" id="uyan_frame"></div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2132314"></script>
+  
+</section>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/05/23/170523/" title="上一篇: jQuery 图片延迟加载方法">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/05/26/170526/" title="下一篇: JavaScript this 关键字的用法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/02/28/180228/">浅谈Flex布局</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/171102/">scrollify 鼠标全屏翻动-滚动一次翻动到下个目标锚点</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/26/170626/">webpack 前端资源模块化打包加载神器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/19/170619/">gulp 基于流的自动化构建工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/170608/">jQuery 命名冲突的三种解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170527/">异步加载 JS 的3种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170526/">JavaScript this 关键字的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/170524/">JavaScript 经典笔试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/23/170523/">jQuery 图片延迟加载方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/18/170518/">清除浮动的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2018 lidong
+            </div><br><br>
+            <div class="footer-left"><a href="http://www.miitbeian.gov.cn" target="_blank">鄂ICP备17025166号-1</a></div>
+            <!--<div class="footer-right">-->
+                <!--<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman-->
+            <!--</div>-->
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >到访人数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+            
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
